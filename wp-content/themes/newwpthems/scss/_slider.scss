@@ -1,0 +1,50 @@
+.slider{
+
+    &__item{
+        position: relative;
+    }
+
+    &__desciptions{
+        position: absolute;
+        bottom: 0;
+        width: 500px;
+        height: 200px;
+        background-color: $white;
+
+        & h3,p{
+            padding: 30px;
+        }
+
+        & h3{
+            font-size: 24px;
+            padding-bottom: 0;
+        }
+
+        & p{
+            font-size: 20px;
+            letter-spacing: 1.4px;
+            line-height: 20px;
+            font-weight: 700;
+        }
+    }
+
+    & img{
+
+    }
+}
+
+.owl-nav .owl-prev span, .owl-nav .owl-next span{
+    font-size: 100px;
+    position: absolute;
+    bottom: 50%;
+    color: $white;
+    text-shadow: 1px 1px 20px rgb(0, 0, 0);
+}
+
+.owl-nav .owl-prev span{
+    left: 5%;
+}
+
+.owl-nav .owl-next span{
+    right: 5%;
+}

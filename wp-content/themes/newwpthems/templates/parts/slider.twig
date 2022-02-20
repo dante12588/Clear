@@ -1,0 +1,18 @@
+{% set slider = page.meta('images') %}
+
+{# item.image   ->  id zdjecia w sliderze #}
+
+<!-- Set up your HTML -->
+<div class="slider owl-carousel">
+
+{% for item in slider %}
+  <div class="slider__item">
+    <img src=" {{ Image(item.image).src }} " alt="slider">
+    <div class="slider__desciptions">
+      <h3> {{ item.title }} </h3>
+      <p> {{ item.content }} </p>
+    </div>
+  </div>
+{% endfor %}
+
+</div>

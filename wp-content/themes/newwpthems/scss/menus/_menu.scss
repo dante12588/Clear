@@ -1,0 +1,29 @@
+.main-nav{
+
+    display: flex;
+    justify-content: center;
+    
+    & ul{
+        display: flex;
+    }
+
+    & li{
+        padding: 0 20px;
+    }
+
+    & a{
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 20px;
+        color: $black;
+        font-weight: 500;
+        border-bottom: 5px solid transparent;
+        transition-property: color, border;
+        transition: .3s ease-in-out;
+
+        &:hover{
+            border-bottom: 5px solid $blue;
+            color: $blue;
+        }
+    }
+}

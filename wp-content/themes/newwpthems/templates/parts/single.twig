@@ -1,0 +1,26 @@
+{% set bg_id = post.meta('bg-post-img') %}
+
+<div class="bg-post">
+    <img src="{{ Image(bg_id).src }}" alt="bg-post">
+    <h3>{{ post.title }}</h3>
+</div>
+
+<div class="content-post">
+    {{ post.content }}
+</div>
+
+<div class="comments">
+
+    {% include "comment-form.twig" %}
+
+    {% for comment in post.comments %}
+        <div class="single-coment">
+            <img src="/nowy/wp-content/themes/newwpthems/icons/quote.svg" alt="">
+            <p class="author">
+                Author: {{ comment.comment_author }}
+            </p>
+            {{ comment.content }}
+            
+        </div>
+    {% endfor %}
+</div>

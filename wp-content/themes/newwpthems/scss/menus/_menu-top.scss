@@ -1,0 +1,44 @@
+.top-menu{
+
+    background-color: $dark-bg;
+
+    & .wrapper{
+        display: flex;
+        justify-content: space-between;
+        min-height: 50px;
+        align-items: center;
+    }
+
+    &__nav{
+        
+        & ul{
+            display: flex;
+        }
+
+        & li{
+            list-style: none;
+        }
+
+        & a{
+            text-decoration: none;
+            color: $white;
+            margin: 10px;
+        }
+    }
+
+    &__social{
+        & img{
+            margin: 10px;
+        }
+    }
+
+    &__logo{
+        background-color: $white;
+
+        & img{
+            margin: 0 auto;
+            padding: 40px 0;
+            display: block;
+        }
+    }
+}

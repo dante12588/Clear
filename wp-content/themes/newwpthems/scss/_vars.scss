@@ -1,0 +1,28 @@
+$dark-bg: #333333;
+$black: #000000;
+$white: #ffffff;
+$blue: #29ABE2;
+
+$desktop-size: 1200px;
+
+.wrapper{
+    max-width: $desktop-size;
+    margin: auto;
+}
+
+.center-img img{
+    margin: auto !important;
+    display: flex;
+}
+
+.flex3{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: $desktop-size;
+    margin: auto;
+    justify-content: space-between;
+
+    & div{
+        width: 30%;
+    }
+}

@@ -1,0 +1,9 @@
+<div class="main-nav">
+    <nav>
+        <ul>
+            {% for item in mainMenu.items %}
+                <a href="{{ item.link }}"><li>{{ item.name }}</li></a>
+            {% endfor %}
+        </ul>
+    </nav>
+</div>

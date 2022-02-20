@@ -1,0 +1,10 @@
+<div class="archive flex3">
+    {% for item in archive %}
+        <div class="archive-item">
+            <a href="{{ item.link }}">
+                <img src="{{ Image(item._thumbnail_id).src }}" alt="{{item.post_type}}">
+                <p>{{ item.post_excerpt }}</p>
+            </a>
+        </div>
+    {% endfor %}
+</div>

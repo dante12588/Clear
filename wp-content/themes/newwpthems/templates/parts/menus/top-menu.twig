@@ -1,0 +1,27 @@
+<div class="top-menu">
+
+    <div class="wrapper">
+        <div class="top-menu__nav">
+            <ul>
+                {% for item in topMenu.items %}
+
+                    <li><a href="{{ item.link }}">{{ item.name }}</a></li>
+
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div class="top-menu__social">
+            <a href="#"><img src="{{theme.path}}/icons/fb.svg" alt=""></a>
+            <a href="#"><img src="{{theme.path}}/icons/ig.svg" alt=""></a>
+            <a href="#"><img src="{{theme.path}}/icons/tw.svg" alt=""></a>
+            <a href="#"><img src="{{theme.path}}/icons/gp.svg" alt=""></a>
+        </div>
+    </div>
+
+    <div class="top-menu__logo">
+        <a href="{{ site.link }}"><img src="{{theme.path}}/icons/logo.png" alt=""></a>
+    </div>
+
+</div>
+
